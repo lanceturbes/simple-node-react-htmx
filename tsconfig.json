@@ -3,8 +3,9 @@
         "strict": true,
         "allowJs": true,
         "checkJs": true,
+        "target": "ES2022",
         "lib": [
-            "ES2022"
+            "ES2022",
         ],
         "paths": {
             "#view/*": [
@@ -12,8 +13,13 @@
             ],
             "#types": [
                 "src/types.d.ts"
+            ],
+            "#util/*": [
+                "src/util/*"
             ]
         },
-        "esModuleInterop": true
+        "module": "ES2022",
+        "esModuleInterop": true,
+        "moduleResolution": "NodeNext"
     },
 }
