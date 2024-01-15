@@ -1,7 +1,7 @@
 {
   "name": "simple-node-htmx-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple music player server",
   "main": "src/main.js",
   "type": "module",
   "scripts": {
