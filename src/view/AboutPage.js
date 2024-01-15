@@ -1,10 +1,9 @@
-import {createElement as h} from "react"
-import BaseLayout from "#view/BaseLayout.js"
+import {createElement as h, Fragment} from "react"
 
 export default function AboutPage() {
     return h(
-        BaseLayout,
-        {title: "About"},
+        Fragment,
+        null,
         h("h1", null, "About"),
         h("p", null, "There's nothing about this about page that's special..."),
     )

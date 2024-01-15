@@ -4,8 +4,7 @@ import NavBar from "#view/NavBar.js"
 
 /**
  * @typedef {Object} BaseLayoutProps
- * @property {string} title
- * @property {ReactNode} [children]
+ * @property {string} pageName
  */
 
 /** @param {BaseLayoutProps} props */
@@ -23,8 +22,18 @@ export default function BaseLayout(props) {
             }),
             h("meta", {name: "color-scheme", content: "light dark"}),
             h("script", {src: "https://unpkg.com/htmx.org@1.9.10"}),
-            h("title", null, props.title),
+            h("title", null, "Music Player"),
         ),
-        h("body", null, h(NavBar, null), props.children),
+        h(
+            "body",
+            null,
+            h(NavBar, null),
+            h("div", {
+                id: "body-content",
+                "hx-swap": "innerHTML",
+                "hx-get": `/view/${props.pageName}`,
+                "hx-trigger": "load",
+            }),
+        ),
     )
 }

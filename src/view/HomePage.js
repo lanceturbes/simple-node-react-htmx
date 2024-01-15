@@ -1,10 +1,9 @@
-import {createElement as h} from "react"
-import BaseLayout from "#view/BaseLayout.js"
+import {createElement as h, Fragment} from "react"
 
 export default function HomePage() {
     return h(
-        BaseLayout,
-        {title: "Home"},
+        Fragment,
+        null,
         h("h1", null, "Welcome!"),
         h(
             "p",
