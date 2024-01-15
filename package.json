@@ -1,0 +1,37 @@
+{
+  "name": "simple-node-htmx-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js"
+  },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "htmx",
+    "react"
+  ],
+  "author": "Lance Turbes",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^12.0.1",
+    "htm": "^3.1.1",
+    "koa": "^2.15.0",
+    "preact": "^10.19.3",
+    "preact-render-to-string": "^6.3.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.14.0",
+    "@types/koa__cors": "^5.0.0",
+    "@types/koa__router": "^12.0.4",
+    "prettier": "^3.2.2",
+    "typescript": "^5.3.3"
+  },
+  "imports": {
+    "#view/*": "./src/view/*"
+  }
+}
