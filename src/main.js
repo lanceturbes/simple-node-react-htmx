@@ -1,4 +1,5 @@
 import Koa from "koa"
+import serve from "koa-static"
 import cors from "@koa/cors"
 import Router from "@koa/router"
 import {h} from "preact"
@@ -20,6 +21,7 @@ router.get("/about", async ctx => {
 })
 
 app.use(cors())
+app.use(serve("./public"))
 app.use(router.routes())
 app.use(router.allowedMethods())
 

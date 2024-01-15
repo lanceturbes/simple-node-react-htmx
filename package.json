@@ -21,6 +21,7 @@
     "@koa/router": "^12.0.1",
     "htm": "^3.1.1",
     "koa": "^2.15.0",
+    "koa-static": "^5.0.0",
     "preact": "^10.19.3",
     "preact-render-to-string": "^6.3.1"
   },
@@ -28,6 +29,7 @@
     "@types/koa": "^2.14.0",
     "@types/koa__cors": "^5.0.0",
     "@types/koa__router": "^12.0.4",
+    "@types/koa-static": "^4.0.4",
     "prettier": "^3.2.2",
     "typescript": "^5.3.3"
   },
