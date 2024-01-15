@@ -2,6 +2,13 @@
 
 This is an example music player server which sends down (partial) views via React + HTMX.
 
+## Main Tech Used
+
+- Page content swaps and requests via [HTMX](https://htmx.org/)
+- Server-side templating via [React](https://react.dev/)
+- Routing/middleware via [Express.js](https://expressjs.com/)
+- Server run using [Node.js](https://nodejs.org/)
+
 ## Getting Started
 
 Type checking is provided via TypeScript + JSDoc annotations. No build step is required to run the server (after
